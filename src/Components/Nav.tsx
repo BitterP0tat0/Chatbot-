@@ -11,12 +11,9 @@ export default function Nav() {
     <nav className="sticky top-0 z-50 flex justify-between items-center bg-gradient-to-b from-purple-200 to-red-300 shadow-md px-6 py-4">
       <div className="flex items-center">
         <Image src="/Bot.svg" alt="Bot" width={80} height={80} />
-      </div>
-
-      <div className="p-6 bg-white rounded-lg shadow-lg">
-        <h1 className="text-4xl font-bold text-center text-gray-800">
-          My Chatbot
-        </h1>
+        <div className="block md:flex p-6 bg-white rounded-xl shadow-lg items-center">
+          <h1 className=" font-bold text-center text-gray-800">My Chatbot</h1>
+        </div>
       </div>
 
       <div className="md:hidden">
@@ -45,7 +42,7 @@ export default function Nav() {
         transition={{ duration: 0.6 }}
         className={`${
           isOpen ? "block" : "hidden"
-        } absolute top-full left-0 w-full md:static md:block md:w-auto`}
+        } absolute top-full w-full md:static md:block md:w-auto bg-white rounded-xl`}
       >
         <ul className="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-x-8 md:space-y-0 p-4">
           <motion.li
