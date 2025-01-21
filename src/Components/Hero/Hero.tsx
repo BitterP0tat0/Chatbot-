@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { FocusCards } from "./ui/focus-cards";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { FocusCards } from "../ui/focus-cards";
+import { TextGenerateEffect } from "../ui/text-generate-effect";
 
 export function Hero() {
   const words =
@@ -37,7 +37,7 @@ export function Hero() {
       </div>
 
       <div className="text-center items-center p-5">
-        <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+        <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-500 sm:text-7xl">
           Technology is leading our life
         </h1>
         <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
@@ -45,8 +45,18 @@ export function Hero() {
         </p>
       </div>
       <div className=" text-white font-bold space-x-4 text-center">
-        <Link href="/">Get started</Link>
-        <Link href="/">Learn more → </Link>
+        <Link
+          href="/"
+          className="hover:text-purple-700 transition-all duration-75"
+        >
+          Get started
+        </Link>
+        <Link
+          href="/"
+          className="hover:text-purple-700 transition-all duration-75"
+        >
+          Learn more →{" "}
+        </Link>
       </div>
       <div className="relative text-center p-6 space-x-4">
         <TextGenerateEffect words={words} />

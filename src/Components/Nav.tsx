@@ -42,7 +42,7 @@ export default function Nav() {
         transition={{ duration: 0.6 }}
         className={`${
           isOpen ? "block" : "hidden"
-        } absolute top-full w-full md:static md:block md:w-auto bg-white rounded-xl`}
+        } absolute left-0 top-full w-full md:w-auto md:static md:block bg-white rounded-xl`}
       >
         <ul className="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-x-8 md:space-y-0 p-4">
           <motion.li
@@ -61,7 +61,7 @@ export default function Nav() {
             whileHover={{ scale: 1.1 }}
             className="text-gray-700 hover:text-purple-700 transition-all font-bold"
           >
-            <Link href="/">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </motion.li>
         </ul>
       </motion.div>

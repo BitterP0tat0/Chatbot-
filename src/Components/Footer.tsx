@@ -16,11 +16,13 @@ export default function Footer() {
             About
           </Link>
 
-          <Link href="/" className="hover:text-blue-400">
+          <Link href="/contact" className="hover:text-blue-400">
             Contact
           </Link>
         </div>
         {/*Add svg pic*/}
+        {/*----------------------------------------------------------------------------------------------*/}
+
         <div className="flex space-x-4">
           <Link
             href="https://facebook.com"
@@ -36,6 +38,7 @@ export default function Footer() {
           ></Link>
         </div>
       </div>
+      {/*----------------------------------------------------------------------------------------------*/}
 
       <div className="p-4 text-center text-sm text-gray-500">
         © 2025 Chatbot. All rights reserved.

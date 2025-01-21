@@ -1,11 +1,11 @@
 import Nav from "@/Components/Nav";
-import { Hero } from "@/Components/Hero/Hero";
 import Footer from "@/Components/Footer";
-export default function Home() {
+import Contact from "@/Components/Contact/contact";
+export default function page() {
   return (
-    <div className="bg-slate-300">
+    <div>
       <Nav></Nav>
-      <Hero></Hero>
+      <Contact></Contact>
       <Footer></Footer>
     </div>
   );
