@@ -10,7 +10,9 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 flex justify-between items-center bg-gradient-to-b from-purple-200 to-red-300 shadow-md px-6 py-4">
       <div className="flex items-center">
-        <Image src="/Bot.svg" alt="Bot" width={80} height={80} />
+        <Link href="/">
+          <Image src="/Bot.svg" alt="Bot" width={80} height={80}></Image>
+        </Link>
         <div className="block md:flex p-6 bg-white rounded-xl shadow-lg items-center">
           <h1 className=" font-bold text-center text-gray-800">My Chatbot</h1>
         </div>
@@ -49,13 +51,13 @@ export default function Nav() {
             whileHover={{ scale: 1.1 }}
             className="text-gray-700 hover:text-purple-700 transition-all font-bold"
           >
-            <Link href="/">Login</Link>
+            <Link href="/login">Login</Link>
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.1 }}
             className="text-gray-700 hover:text-purple-700 transition-all font-bold"
           >
-            <Link href="/">Register</Link>
+            <Link href="/register">Register</Link>
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.1 }}
